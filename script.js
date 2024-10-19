@@ -11,7 +11,7 @@ let score = 0;
 let clicks = 0;
 let multiplier = 1;
 let gameActive = false;
-let timeLimit = 20;
+let timeLimit = 15;
 let time = timeLimit;
 let highscore = 0;
 let oldhighscore = 0;
@@ -95,7 +95,7 @@ function flip() {
         title.style.paddingTop = 0;
         flip();
         countdownInterval = setInterval(countdown, 100);
-        randomizeInterval = setInterval(newPos, 2000);
+        randomizeInterval = setInterval(newPos, 1500);
         setTimeout(endGame, timeLimit*1000);
     }
 }
